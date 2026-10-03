@@ -1,16 +1,27 @@
 #include <stdio.h>
 
+
 int add(int, int);
+int sub(int, int);
+
 
 int main() {
 
     int total = 0;
     total = add(10, 20);
-    printf("%d + %d = %d", 10, 20, total);
+    printf("%d + %d = %d\n\n", 10, 20, total);
+	
+	total = sub(10, 20);
+    printf("%d - %d = %d", 200, 20, total);
     return 0;
 }
 
 int add(int a, int b)
 {
     return a + b;
+}
+
+int sub(int a, int b)
+{
+    return a - b;
 }
